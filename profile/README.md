@@ -68,27 +68,48 @@ La estuctura de estas ramas son para aquellas que solucionan bugs, errores espec
 
 ### Agregar Cambios
 Una vez realizados los cambios en la rama local se podra realizar el envío de cambios con los sigueintes pasos:
-- Verificar que se encuentra en la rama con los cambios.
+1. Verificar que se encuentra en la rama con los cambios:
 ```
 git status
 ```
 > También hará un resumen de los cambios a subir en caso de tenerlos.
 
-- 
-Los archivos que se agreguen y el mensaje con el que se suben los cambios, debe ser específico y detallar todas las modificaciones, mejoras o aspectos a tener en cuenta con el nuevo código.
-- Se recomienda agregar manual el archivo con los cambios en vez de utilizar el comando git add .
-- Al agregar los cambios utilizar este comando: git add -p nombrearchivo.html, este comando te permitirá agregar solamente los cambios del archivo que tienen que ver con el commit que se está realizando.
-#### Mensajes Commit
-Para comentar los cambios se debe escribir el comando:
+2. Agregar los archivos con los cambio:
+```
+git add .
+```
+
+3. Realizar el comentario para agregar a la subida de cambios:
 ```
 git commit -m "Encabezado" -m "Detalle"
 ```
-o únicamente: (para mensajes más largos que requieren del editor de texto de git para escribir el mensaje).
+  o únicamente: (para mensajes quizás más largos que requieren un editor de texto de git para escribir el mensaje).
 ```
 git commit
 ```
+> Los archivos que se agreguen y el mensaje con el que se suben los cambios, debe ser específico y detallar todas las modificaciones, mejoras o aspectos a tener en cuenta con el nuevo código.
+
+> Se recomienda agregar manual el archivo con los cambios en vez de utilizar el comando git add .
+
+4. Subir los cambios: 
+```
+git push
+```
+5. (Adicional) En caso de necesitarlo, realizar un 'Pull Request' o Solicitud de Integración de Cambios, para agregar la rama de cambios a ```developer```.
 
 ### Solicitud de Integración de Cambios
+Esta también llamada 'Pull Request' es la herramienta que le permitira a los repositorios mantener en estabilidad las versiones de los aplicativos, únicamente manteniendo cambios necesarios dentro de las ramas principales y aquellas con solicitudes o cambios no tan prioritarios en ramas alternas secundarias.
+Para hacerlo se necesita:
+
+1. Haber realizado la subida de cambios en la rama secundaria dentro del repositorio.
+2. En el repositorio de Github abrir la pestaña de 'Pull requests' y dar click en 'New pull request'
+3. Se desplegaran las opciones de ```base:``` y ```compare:``` para las ramas destino y origen (en ese orden), con las que definiremos de donde a donde se migraran los cambios.
+4. Al seleccionar las ramas se hará una verificación de cambios, esta verificación definirá si está todo listo para hacer la unión de ramas o si se requiere un paso adicional.
+5. Luego de la verificación y teniendo lista la unión, dar clicl en "View Pull Request", allis se nos mostrará el resumen de cambios.
+6. (Opcional) En caso de requerirlo y tener los permisos para hacerlo, podrá dar click en 'Merge pull Request' para unificar las ramas con los cambios.
+
+> Si eran cambios provenientes de una rama secundaria se podrá elminar dicha rama luego de haber hecho la unión. 
 
 ## Versionamiento
+
 
