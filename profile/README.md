@@ -65,7 +65,7 @@ La estuctura de estas ramas son para aquellas que solucionan bugs, errores espec
   - add: Se generan una nuevas funcionalidades.
   - update: Se modifican funcionalidades.
   - fix: Se realizan correciones.
-  - critial: Se hacen correcciones de un error que no pasan por pruebas y van directamente a la rama ```main``` o ```test``` para ser desplegados.
+  - critical: Se hacen correcciones de un error que no pasan por pruebas y van directamente a la rama ```main``` o ```test``` para ser desplegados.
 * El nombre debe ser corto, sin dar muchos detalles.
 ### Diagrama
 <img width="938" height="738" alt="ramas_github" src="https://github.com/user-attachments/assets/0d7105ba-4c36-4e37-9494-4adc7e89e850" />
