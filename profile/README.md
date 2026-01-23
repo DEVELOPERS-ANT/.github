@@ -24,7 +24,7 @@ Los proyectos que se desarrollan para la empresa Antioqueña de Porcinos S.A.S. 
 
 ## Uso de los Repositorios
 Es necesario tener los comandos básicos de uso dentro de los procesos de cambios en los repositorios, para consultarlos haga [click aquí](https://gist.github.com/dasdo/9ff71c5c0efa037441b6).
-> Báscios para manejo de ramas, consultas de cambios, etc.
+> Básicos para manejo de ramas (cambio de ramas, creación, estado), cambios (añadir cambios, consultar cambios, subir cambios), entre otros.
 
 ### Clonar un Repositorio
 Para clonar un repositorio de la organizaión se deberán seguir los siguientes pasos:
