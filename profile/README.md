@@ -1,7 +1,9 @@
 
 # Desarrolladores de Software Antioqueña de Porcinos S.A.S.  
 
-> En esta organización encontrará los repositorios de la empresa Antioquena de Porcinos S.A.S., administrada por 'Área de Desarrollo de Software'.
+> En esta organización encontrará los repositorios de la empresa Antioquena de Porcinos S.A.S.
+
+> Administrada por 'Área de Desarrollo de Software'.
 
 > [![My Skills](https://skillicons.dev/icons?i=visualstudio,dotnet,cs,aws,azure,docker,redis,github,git,vscode,py,anaconda,tensorflow,html,js,css,nodejs,angular,react,tailwind,vite,postman,stackoverflow,windows,vercel)](https://skillicons.dev)
 
@@ -12,6 +14,7 @@
   - [Clonar un Repositorio](#clonar-un-repositorio)
   - [Estructura de las Ramas](#estructura-de-las-ramas)
   - [Agregar Cambios](#agregar-cambios)
+  - [Solicitud de Integración de Cambios](#solicitud-de-integración-de-cambios)
   [Versionamiento](#versionamiento)
 
 ## Información General
