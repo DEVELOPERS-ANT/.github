@@ -68,7 +68,7 @@ La estuctura de estas ramas son para aquellas que solucionan bugs, errores espec
   - critial: Se hacen correcciones de un error que no pasan por pruebas y van directamente a la rama ```main``` o ```test``` para ser desplegados.
 * El nombre debe ser corto, sin dar muchos detalles.
 ### Diagrama
-<img width="1025" height="713" alt="ramas_github" src="https://github.com/user-attachments/assets/1a92c263-40a3-4876-b04f-1f7b38890485" />
+<img width="938" height="738" alt="ramas_github" src="https://github.com/user-attachments/assets/0d7105ba-4c36-4e37-9494-4adc7e89e850" />
 
 ### Crear una Rama Local
 Para crear una rama local para los cambios sigue estos pasos:
