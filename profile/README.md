@@ -13,6 +13,7 @@
 * [Uso de los Repositorios](#uso-de-los-repositorios)
   - [Clonar un Repositorio](#clonar-un-repositorio)
   - [Estructura de las Ramas](#estructura-de-las-ramas)
+  - [Crear una Rama Local](#crear-una-rama-local)
   - [Agregar Cambios](#agregar-cambios)
   - [Solicitud de Integración de Cambios](#solicitud-de-integración-de-cambios)
 * [Versionamiento](#versionamiento)
@@ -67,22 +68,36 @@ La estuctura de estas ramas son para aquellas que solucionan bugs, errores espec
   - docs: Se generan cambios en la documentación.
 * El nombre debe ser corto, sin dar muchos detalles.
 
+### Crear una Rama Local
+Para crear una rama local para los cambios sigue estos pasos:
+1. Cambia a una rama base de la que se duplicaran los cambios.
+```
+git checkout <base-branch-name>
+```
+2. Crea y cambia a la nueva rama
+```
+git checkout -b <new-branch-name>
+```
 > Nota: Como sugerencia, tratar de no tener mas de una o dos creadas en tu repositorio local.
 
 ### Agregar Cambios
-Una vez realizados los cambios en la rama local se podra realizar el envío de cambios con los sigueintes pasos:
-1. Verificar que se encuentra en la rama con los cambios:
+Para agregar cambios dentro de los repositorios se recomienda seguir estos pasos para garantizar un flujo organizado de los cambios:
+1. En tu PC dentro de la carpeta local del repositorio crea una rama (en base a una principal) para manejar los cambios locales:
+```
+git add .
+```
+2. Verificar que se encuentra en la rama con los cambios:
 ```
 git status
 ```
 > También hará un resumen de los cambios a subir en caso de tenerlos.
 
-2. Agregar los archivos con los cambio:
+3. Agregar los archivos con los cambio:
 ```
 git add .
 ```
 
-3. Realizar el comentario para agregar a la subida de cambios:
+4. Realizar el comentario para agregar a la subida de cambios:
 ```
 git commit -m "Encabezado" -m "Detalle"
 ```
@@ -94,11 +109,11 @@ git commit
 
 > Se recomienda agregar manual el archivo con los cambios en vez de utilizar el comando git add .
 
-4. Subir los cambios: 
+5. Subir los cambios: 
 ```
 git push
 ```
-5. (Adicional) En caso de necesitarlo, realizar un 'Pull Request' o Solicitud de Integración de Cambios, para agregar los de cambios a una rama principal.
+6. (Adicional) En caso de necesitarlo, realizar un 'Pull Request' o Solicitud de Integración de Cambios, para agregar los de cambios a una rama principal.
    
 > Cualquiera podrá realizar la solicitud pero únicamente la podrá confirmar y ejecutar un usuario con permisos para hacerlo.
 
