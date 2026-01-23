@@ -62,8 +62,9 @@ La estuctura de estas ramas son para aquellas que solucionan bugs, errores espec
 * Se escriben en **lowerCamelCase**.
 * El tipo se divide en:
   - add: Se generan una nuevas funcionalidades.
-  - fix: Se realizan correciones de Bugs.
-  - critial: Se hacen correcciones de bugs que no pasan por pruebas sino que van directamente a la rama ```main``` o ```test``` para ser desplegados.
+  - update: Se modifican funcionalidades.
+  - fix: Se realizan correciones.
+  - critial: Se hacen correcciones de un error que no pasan por pruebas y van directamente a la rama ```main``` o ```test``` para ser desplegados.
 * El nombre debe ser corto, sin dar muchos detalles.
 
 ### Crear una Rama Local
