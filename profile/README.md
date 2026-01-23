@@ -63,9 +63,7 @@ La estuctura de estas ramas son para aquellas que solucionan bugs, errores espec
 * El tipo se divide en:
   - add: Se generan una nuevas funcionalidades.
   - fix: Se realizan correciones de Bugs.
-  - hotFix: Se hacen correcciones de bugs que no pasan por pruebas sino que van directamente a la rama ```main``` para ser desplegados.
-  - delete: Se eliminan funciones o archivos.
-  - docs: Se generan cambios en la documentación.
+  - critial: Se hacen correcciones de bugs que no pasan por pruebas sino que van directamente a la rama ```main``` o ```test``` para ser desplegados.
 * El nombre debe ser corto, sin dar muchos detalles.
 
 ### Crear una Rama Local
