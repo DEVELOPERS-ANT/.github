@@ -95,7 +95,9 @@ git commit
 ```
 git push
 ```
-5. (Adicional) En caso de necesitarlo, realizar un 'Pull Request' o Solicitud de Integración de Cambios, para agregar la rama de cambios a ```developer```.
+5. (Adicional) En caso de necesitarlo, realizar un 'Pull Request' o Solicitud de Integración de Cambios, para agregar los de cambios a una rama principal.
+   
+> Cualquiera podrá realizar la solicitud pero únicamente la podrá confirmar y ejecutar un usuario con permisos para hacerlo.
 
 ### Solicitud de Integración de Cambios
 Esta también llamada 'Pull Request' es la herramienta que le permitira a los repositorios mantener en estabilidad las versiones de los aplicativos, únicamente manteniendo cambios necesarios dentro de las ramas principales y aquellas con solicitudes o cambios no tan prioritarios en ramas alternas secundarias.
@@ -111,5 +113,14 @@ Para hacerlo se necesita:
 > Si eran cambios provenientes de una rama secundaria se podrá elminar dicha rama luego de haber hecho la unión. 
 
 ## Versionamiento
+Las versiones están esandarizadas por medio de 'Pipelines' que se encargan automáticamente de generarlas en base a políticas establecidas y bajo ciertas condiciones:
+- Versión de Pruebas: Esta versión se generará al realizar una unión de cambios (merge) por medio de 'pull request' o al subir directamente cambios a la rama de 'test'.
+- Versión Productiva: Esta versión se generará al realizar una unión de cambios (merge) por medio de 'pull request' o al subir directamente cambios a la rama de 'main'.
 
+La estrategia elegida para el versionamiento de las aplicaciones es la **Numeración Semántica**, y se basa de una numeración de 3 dígitos: **X.Y.Z (Mayor.Menor.Parche)**.
+1. ***La versión mayor (X)*** se incrementa cuando se realizan cambios que rompen la compatibilidad hacia atrás con versiones anteriores. Esto significa que las modificaciones en el comportamiento del software pueden afectar la forma en que los usuarios interactúan con él.
+2. ***La versión menor (Y)*** se incrementa cuando se añaden nuevas características o funcionalidades al software de una manera compatible con las versiones anteriores. Esto indica que se han agregado capacidades nuevas sin romper la estructura existente.
+3. ***El número de parche (Z)*** se incrementa cuando se realizan correcciones de errores o soluciones para problemas de manera retrocompatible. Estos cambios no deberían alterar la funcionalidad existente ni la interfaz de programación.
+
+> Se pretende que cada versión tenga su propia **etiqueta o tag** y **release** en el repositorio, para tener un control de versiones ordenado, que permita correctamente rastrear versiones específicas del código.
 
