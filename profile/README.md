@@ -15,7 +15,7 @@
   - [Estructura de las Ramas](#estructura-de-las-ramas)
   - [Agregar Cambios](#agregar-cambios)
   - [Solicitud de Integración de Cambios](#solicitud-de-integración-de-cambios)
-  [Versionamiento](#versionamiento)
+* [Versionamiento](#versionamiento)
 
 ## Información General
 Los proyectos que se desarrollan para la empresa Antioqueña de Porcinos S.A.S. se almacenan en esta organización para el registro de los cambios, bugs, mejoras, documentación y versiones de las aplicaciones.
