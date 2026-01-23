@@ -50,11 +50,11 @@ git clone <URL>
 > Nota: La contraseña no se ve en la terminal, al pegar 1 vez el texto dar enter y seguir con el proceso.
 
 ### Estructura de las Ramas
-El proyecto tiene 3 ramas principales, la rama ```main```, la rama ```developer``` y la rama ```test```. 
+El proyecto tiene 3 ramas principales, la rama ```main```, la rama ```developer``` y la rama ```qas```. 
 * La rama ```main``` es de dónde saldrán los release (que se verán reflejados en las tags) y la que se modificará únicamente cuando las pruebas sobre la rama de desarrollo hayan sido ejecutadas correctamente.
 * La rama ```developer``` es dónde se harán los merge de las ramas que solucionan los bugs y errores específicos de las nuevas funcionalidades del proyecto.
-* La rama ```test``` es la rama que duplicará a developer y en la que se generarán las pruebas.
-> De la rama ```test``` se hace el merge a la rama ```main``` para el release de una nueva versión de la aplicación.
+* La rama ```qas``` es la rama que duplicará a developer y en la que se generarán las pruebas.
+> De la rama ```qas``` se hace el merge a la rama ```main``` para el release de una nueva versión de la aplicación.
 
 Se deberán crear nuevas ramas por cada uno de los requisitos o tareas a realizar.
 > El propósito es mantener siempre una versión estable y poder realizar cambios con prioridad en caso de requerirlo.
@@ -65,7 +65,7 @@ La estuctura de estas ramas son para aquellas que solucionan bugs, errores espec
   - add: Se generan una nuevas funcionalidades.
   - update: Se modifican funcionalidades.
   - fix: Se realizan correciones.
-  - critical: Se hacen correcciones de un error que no pasan por pruebas y van directamente a la rama ```main``` o ```test``` para ser desplegados.
+  - critical: Se hacen correcciones de un error que no pasan por pruebas y van directamente a la rama ```main``` o ```qas``` para ser desplegados.
 * El nombre debe ser corto, sin dar muchos detalles.
 ### Diagrama
 <img width="938" height="738" alt="ramas_github" src="https://github.com/user-attachments/assets/0d7105ba-4c36-4e37-9494-4adc7e89e850" />
@@ -134,7 +134,7 @@ Para hacerlo se necesita:
 
 ## Versionamiento
 Las versiones están esandarizadas por medio de 'Pipelines' que se encargan automáticamente de generarlas en base a políticas establecidas y bajo ciertas condiciones:
-- Versión de Pruebas: Esta versión se generará al realizar una unión de cambios (merge) por medio de 'pull request' o al subir directamente cambios a la rama de 'test'.
+- Versión de Pruebas: Esta versión se generará al realizar una unión de cambios (merge) por medio de 'pull request' o al subir directamente cambios a la rama de 'qas'.
 - Versión Productiva: Esta versión se generará al realizar una unión de cambios (merge) por medio de 'pull request' o al subir directamente cambios a la rama de 'main'.
 
 La estrategia elegida para el versionamiento de las aplicaciones es la **Numeración Semántica**, y se basa de una numeración de 3 dígitos: **X.Y.Z (Mayor.Menor.Parche)**.
