@@ -13,6 +13,7 @@
 * [Uso de los Repositorios](#uso-de-los-repositorios)
   - [Clonar un Repositorio](#clonar-un-repositorio)
   - [Estructura de las Ramas](#estructura-de-las-ramas)
+  - [Diagrama](#diagrama)
   - [Crear una Rama Local](#crear-una-rama-local)
   - [Agregar Cambios](#agregar-cambios)
   - [Solicitud de Integración de Cambios](#solicitud-de-integración-de-cambios)
@@ -66,6 +67,8 @@ La estuctura de estas ramas son para aquellas que solucionan bugs, errores espec
   - fix: Se realizan correciones.
   - critial: Se hacen correcciones de un error que no pasan por pruebas y van directamente a la rama ```main``` o ```test``` para ser desplegados.
 * El nombre debe ser corto, sin dar muchos detalles.
+### Diagrama
+<img width="1025" height="713" alt="ramas_github" src="https://github.com/user-attachments/assets/1a92c263-40a3-4876-b04f-1f7b38890485" />
 
 ### Crear una Rama Local
 Para crear una rama local para los cambios sigue estos pasos:
